@@ -1,0 +1,183 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body {
+	width:100%;
+	height:90vh;
+	background-image:url(../img/banner.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: all;
+	overflow:hidden;
+}
+img {
+	width:100%;
+}
+/*box*/
+.content-box {
+	width:444px;
+	height:338px;
+	background: white;
+	padding:45px;
+	margin:auto;
+    justify-content:center;
+    margin-top:9%;
+}
+.header {
+	width:100%;
+	display:block;
+}
+.header img {
+	width:100%;
+	height:25px;
+	/*margin-left:-114px;*/
+}
+h3 {
+   font-family:helvetica;
+       color: #404040;
+    font-size: 1.4rem;
+    margin-top:15px;
+}
+.email , .pass {
+	width:100%;
+	font-family:Helvetica;
+	font-weight:100;
+	font-size:16px;
+	border:none;
+	padding-top:10px;
+	padding-bottom:8px;
+	border-bottom:1px solid #404040;
+	margin-top: 15px;
+	transition:all 0.2s;
+}
+.email:focus , .pass:focus {
+	transition:all 0.2s;
+	outline:0px;
+	border-bottom:1px solid #005DA6;
+}
+.question {
+	margin-top:12px;
+}
+.question a {
+	text-decoration:none;
+	font-family:arial;
+	font-size:15px;
+	font-weight:100;
+}
+.one {
+	color:black;
+}
+.second {
+	color: #005DA6;
+}
+
+.btn-enviar  , .btn-login {
+	display:block;
+	width:108px;
+	height:32px;
+	font-size:18px;
+	color:white;
+	background: #0067B8;
+	border:none;
+	float:right;
+	margin-top:50px;
+	cursor:pointer;
+}
+/*end-box*/
+/*footer*/
+footer {
+	width:100%;
+	display:block;
+	background-color:rgba(0.00, 0.00, 0.00, 0.7);
+	position:absolute;
+	bottom:0px;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+footer a {
+  text-decoration:none;
+  color:white;
+  float:right;
+  font-family:calibri;
+  font-size:13px;
+  margin-left:20px;
+}
+
+
+/*casillero para contraseña*/
+.content-name {
+	display:flex;
+	flex-wrap:nowrap;
+	width:100%;
+	margin-top:15px;
+    margin-bottom:5px;
+}
+#textemail {
+   font-family:helvetica;
+   font-size:17px;
+   margin-left:5px;
+   margin-top:-3px;
+}
+.icon-left {
+  font-size:14px;
+  color:gray;
+}
+.question-dos {
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:12px;
+}
+.question-dos .dos  {
+	width:100%;
+	text-decoration:none;
+	font-family:helvetica;
+	font-size:17px;
+	color:black;
+	font-weight:10;
+}
+.question-dos .one {
+	width:100%;
+	text-decoration:none;
+	font-family:helvetica;
+	font-size:15px;
+	color:#40ACEB;
+	font-weight:10;
+	margin-top:15px;
+}
+.btn-login {
+	margin-top:-5px;
+}
+
+@media screen and (max-width:800px) {
+      .content-box {
+      	width:65%;
+      	min-width:300px;
+      	padding:15px;
+      }
+      .content-box {
+	height:400px;
+	background: white;
+	padding:45px;
+	margin:auto;
+    justify-content:center;
+    margin-top:7%;
+}
+}
+@media screen and (max-width:400px) {
+	.content-box {
+		width:90%;
+		padding:20px;
+	}
+	.btn-login {
+	margin-top:20px;
+    }
+   .btn-enviar {
+	margin-top:100px;
+    }
+   form {
+	margin-top:50px;
+   }
+
+}
